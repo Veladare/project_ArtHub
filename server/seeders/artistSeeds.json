@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Vincent van Gogh",
+        "style": "Post-Impressionism",
+        "bio": "Vincent Willem van Gogh was a Dutch Post-Impressionist painter who posthumously became one of the most famous and influential figures in Western art history. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life.",
+        "art": []
+    },
+    {
+        "name": "Salvador Dalí",
+        "style": "Surrealism",
+        "bio": "Salvador Domingo Felipe Jacinto Dalí i Domènech, 1st Marquess of Dalí de Púbol was a Spanish surrealist artist renowned for his technical skill, precise draftsmanship, and the striking and bizarre images in his work.",
+        "art": []
+    },
+    {
+        "name": "Michelangelo",
+        "style": "Renaissance",
+        "bio": "Michelangelo di Lodovico Buonarroti Simoni, known simply as Michelangelo, was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art.",
+        "art": []
+    },
+    {
+        "name": "Leonardo da Vinci",
+        "style": "High Renaissance",
+        "bio": "Leonardo di ser Piero da Vinci was an Italian polymath of the High Renaissance who is widely considered one of the most diversely talented individuals ever to have lived. His most known artworks include 'The Mona Lisa' and 'The Last Supper.'",
+        "art": []
+    },
+    {
+        "name": "Auguste Rodin",
+        "style": "Modern Sculpture",
+        "bio": "François Auguste René Rodin was a French sculptor generally considered the founder of modern sculpture. He was schooled traditionally and took a craftsman-like approach to his work. Rodin possessed a unique ability to model a complex, turbulent, and deeply pocketed surface in clay.",
+        "art": []
+    }
+]

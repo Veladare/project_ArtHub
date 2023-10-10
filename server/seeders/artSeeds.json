@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Starry Night",
+        "artist": "Vincent van Gogh",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "Starry Night is one of Vincent van Gogh's most famous paintings. It was painted in June 1889 and depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise."
+    },
+    {
+        "title": "The Persistence of Memory",
+        "artist": "Salvador Dalí",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "The Persistence of Memory is a painting by artist Salvador Dalí, and is one of his most recognizable works. It is known for the melting clocks and is thought to be a representation of the relativity of space and time."
+    },
+    {
+        "title": "David",
+        "artist": "Michelangelo",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "sculpture",
+        "description": "David is a masterpiece of Renaissance sculpture created between 1501 and 1504 by the Italian artist Michelangelo. It is a 5.17-metre (17.0 ft) marble statue of the Biblical hero David, a favoured subject in the art of Florence."
+    },
+    {
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "The Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci. It is considered an archetypal masterpiece of the Italian Renaissance, and has been described as 'the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world.'"
+    },
+    {
+        "title": "The Thinker",
+        "artist": "Auguste Rodin",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "sculpture",
+        "description": "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. It depicts a man in sober meditation battling with a powerful internal struggle. The unique original plaster was exhibited in 1888 and numerous versions were placed all over the world."
+    }
+]
