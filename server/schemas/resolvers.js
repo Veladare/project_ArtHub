@@ -8,7 +8,26 @@ const resolvers = {
       return User.find()
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username })
+      return User.findOne({ username }).populate('thoughts');
+    },
+    // thoughts: async (parent, { username }) => {
+    //   const params = username ? { username } : {};
+    //   return Thought.find(params).sort({ createdAt: -1 });
+    // },
+    // thought: async (parent, { thoughtId }) => {
+    //   return Thought.findOne({ _id: thoughtId });
+    // },
+    arts: async () => {
+      return Art.find()
+    },
+    art: async () => {
+      return Art.findOne({ artId })
+    },
+    artists: async () => {
+      return Artist.find().populate('art')
+    },
+    artist: async () => {
+      return Artist.findOne({ artistId }).populate('art')
     }
   },
 
@@ -35,6 +54,38 @@ const resolvers = {
 
       return { token, user };
     },
+    // addThought: async (parent, { thoughtText, thoughtAuthor }) => {
+    //   const thought = await Thought.create({ thoughtText, thoughtAuthor });
+
+    //   await User.findOneAndUpdate(
+    //     { username: thoughtAuthor },
+    //     { $addToSet: { thoughts: thought._id } }
+    //   );
+
+    //   return thought;
+    // },
+    // addComment: async (parent, { thoughtId, commentText, commentAuthor }) => {
+    //   return Thought.findOneAndUpdate(
+    //     { _id: thoughtId },
+    //     {
+    //       $addToSet: { comments: { commentText, commentAuthor } },
+    //     },
+    //     {
+    //       new: true,
+    //       runValidators: true,
+    //     }
+    //   );
+    // },
+    // removeThought: async (parent, { thoughtId }) => {
+    //   return Thought.findOneAndDelete({ _id: thoughtId });
+    // },
+    // removeComment: async (parent, { thoughtId, commentId }) => {
+    //   return Thought.findOneAndUpdate(
+    //     { _id: thoughtId },
+    //     { $pull: { comments: { _id: commentId } } },
+    //     { new: true }
+    //   );
+    // },
   },
 };
 
