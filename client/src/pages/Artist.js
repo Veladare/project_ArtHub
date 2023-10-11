@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Artist.css'; // import CSS file
 
 const Artist = () => {
     // Artist Information 
@@ -13,18 +14,17 @@ const Artist = () => {
     <main>
       <div className="flex-row justify-center">
         <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
+          className="col-12 col-md-10 mb-3 p-3 artist-container"
         >
             {/* Artist Name */}
-            <h1>{artistInfo.name}</h1>
+            <h1 className="artist-name">{artistInfo.name}</h1>
 
             {/* Artist Style */}
-            <h2>Art Style: {artistInfo.style}</h2>
+            <h2 className="artist-style">Art Style: {artistInfo.style}</h2>
             {/* Artist Bio */}
-            <p>{artistInfo.bio}</p>
+            <p className="artist-bio">{artistInfo.bio}</p>
             {/* Art Photo */}
-            <img src={artistInfo.art} alt="Artwork"/>
+            <img src={artistInfo.art} alt="Artwork" className="artist-image"/>
 
         </div>
       </div>
