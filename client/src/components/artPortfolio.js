@@ -8,6 +8,7 @@ import artPiece3 from '../../../server/assets/Jimson_Weed.jpeg';
 import artPiece4 from '../../../server/assets/Mona_Lisa.jpeg';
 import artPiece5 from '../../../server/assets/number-1a.jpeg';
 import artPiece6 from '../../../server/assets/Starry_Night.jpeg';
+import artPiece7 from '../../../server/assets/the_persistence_of_memory.jpeg';
 
 const artPieces = [
     {image: artPiece, altText: "artPiece", description: "artPiece"},
@@ -16,6 +17,7 @@ const artPieces = [
     {image: artPiece4, altText: "artPiece4", description: "artPiece4"},
     {image: artPiece5, altText: "artPiece5", description: "artPiece5"},
     {image: artPiece6, altText: "artPiece6", description: "artPiece6"},
+    {image: artPiece7, altText: "artPiece7", description: "artPiece7"},
 ];
 
 export default function artPortfolio() {
