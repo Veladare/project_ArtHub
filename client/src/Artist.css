@@ -1,0 +1,31 @@
+/*CSS for artist container */
+.artist-container {
+    border: 1px dotted #1a1a1a;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Artist Name */
+.artist-name {
+    font-size: 24px;
+    color:#333; 
+}
+
+/* Artist Name */
+.artist-style {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Artist Bio*/
+.artist-bio {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Artist Image */
+.artist-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1a1a1a;
+}
