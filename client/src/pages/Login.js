@@ -4,8 +4,22 @@ import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
-import EyeOverlay from '../components/EyeOverlay/EyeOverlay'; 
+import EyeOverlay from '../components/EyeOverlay/EyeOverlay';
 
+const cardStyles = {
+    border: 'none'
+};
+
+const cardHeaderStyles = {
+    border: 'none',
+    backgroundColor: 'dark',
+    color: 'white',
+    padding: '3px'
+};
+
+const cardBodyStyles = {
+    border: 'none'
+};
 
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: '' });
@@ -44,12 +58,12 @@ const Login = (props) => {
 
     return (
         <main className="flex-row justify-center mb-4">
-            <div className="col-12 col-lg-12" style={{ padding: '25px' }}>
-                <div className="card">
-                    <h4 className="card-header bg-dark text-light p-3">Login</h4>
-                    <div className="card-body">
+        <div className="col-12 col-lg-12" style={{ padding: '25px' }}>
+            <div className="card" style={cardStyles}>
+                <h4 className="card-header" style={cardHeaderStyles}>Login</h4>
+                <div className="card-body" style={cardBodyStyles}>
 
-                        <EyeOverlay />  
+                <EyeOverlay />  
                         
                         {data ? (
                             <p>
