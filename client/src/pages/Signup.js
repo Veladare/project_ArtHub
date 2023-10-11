@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
+import EyeOverlay from '../components/EyeOverlay/EyeOverlay';  
+
+
 import Auth from '../utils/auth';
 
 const Signup = () => {
@@ -44,6 +47,10 @@ const Signup = () => {
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
           <div className="card-body">
+
+          <EyeOverlay />  
+
+
             {data ? (
               <p>
                 Success! You may now head{' '}
