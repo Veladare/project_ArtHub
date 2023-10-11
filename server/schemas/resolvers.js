@@ -24,10 +24,10 @@ const resolvers = {
       return Art.findOne({ artId })
     },
     artists: async () => {
-      return Artist.find()
+      return Artist.find().populate('art')
     },
     artist: async () => {
-      return Artist.findOne({ artistId })
+      return Artist.findOne({ artistId }).populate('art')
     }
   },
 
