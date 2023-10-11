@@ -1,0 +1,28 @@
+header {
+    color: black;
+    background-color: rgb(109, 154, 109);
+}
+
+h1 {
+    color: black;
+}
+
+#artist{
+    background-color: red;
+    color: white;
+}
+
+#login{
+    background-color:orange ;
+    color: white;
+}
+
+#signup {
+    background-color: blue;
+    color: white;
+}
+
+#logout {
+    background-color: purple;
+    color: white;
+}
