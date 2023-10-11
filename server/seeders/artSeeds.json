@@ -33,5 +33,40 @@
         "added": "2023-10-05T00:00:00Z",
         "medium": "sculpture",
         "description": "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. It depicts a man in sober meditation battling with a powerful internal struggle. The unique original plaster was exhibited in 1888 and numerous versions were placed all over the world."
+    },
+    {
+        "title": "Guernica",
+        "artist": "Pablo Picasso",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "Guernica is one of Pablo Picasso's most famous works. This large mural-sized oil painting on canvas was created in 1937 and reflects the artist's horror at the Nazi German bombing of Guernica, Spain, during the Spanish Civil War. The monochromatic artwork speaks to the anguish, devastation, and chaos caused by the event, embodying an overall anti-war message."
+    },
+    {
+        "title": "Water Lilies",
+        "artist": "Claude Monet",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "Water Lilies is a series of approximately 250 oil paintings by French Impressionist Claude Monet. The paintings depict Monet's flower garden at his home in Giverny and are some of his most famous works. He began the series during the last 30 years of his life, utilizing a distinct, abstract technique and vibrant colors to capture the beauty of the natural scene."
+    },
+    {
+        "title": "Jimson Weed/White Flower No. 1",
+        "artist": "Georgia O’Keeffe",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "Jimson Weed/White Flower No. 1 is an iconic painting by American artist Georgia O’Keeffe. Created in 1932, the artwork depicts a close-up view of a white jimson weed flower. O’Keeffe’s ability to beautifully capture the essence and intricacies of the flower demonstrates her attention to detail and her appreciation for the natural world."
+    },
+    {
+        "title": "The Two Fridas",
+        "artist": "Frida Kahlo",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "The Two Fridas is an iconic painting created by Frida Kahlo in 1939. It is a double self-portrait, depicting two versions of Kahlo seated together. The two figures are connected by both hands and by a heart that is open to the viewer. The work speaks to Kahlo's experiences and emotions, particularly in relation to her turbulent relationship with fellow artist Diego Rivera."
+    },
+    {
+        "title": "Number 1A, 1948",
+        "artist": "Jackson Pollock",
+        "added": "2023-10-05T00:00:00Z",
+        "medium": "painting",
+        "description": "Number 1A, 1948 is a classic example of Jackson Pollock's 'drip' technique, which he began using in 1947. Instead of using a brush, Pollock would let paint drip from a can onto the canvas, which was laid out on the ground. Pollock allowed the paint to land as it may, often not touching the canvas at all, which created a chaotic yet controlled and intricate network of lines."
     }
 ]
