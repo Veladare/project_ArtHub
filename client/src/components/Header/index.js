@@ -3,40 +3,42 @@ import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
 
+import "./header.css"
+
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    <header className=" mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-          <Link className="text-light" to="/">
-            <h1 className="m-0">Tech Thoughts</h1>
+          <Link to="/">
+            <h1 className="m-0">Berkeley Art Museum</h1>
           </Link>
-          <p className="m-0">Get into the mind of a programmer.</p>
+          <p className="m-0">Browse the gallery of our featured artists!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
             <>
-              <span>Hey there, {Auth.getProfile().data.username}!</span>
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+              <span>Welcome, {Auth.getProfile().data.username}!</span>
+              <button id="logout" className="btn btn-lg m-2" onClick={logout}>
                 Logout
               </button>
-              <Link className="btn btn-lg btn-info m-2" to="/artist">
+              <Link id="artist" className="btn btn-lg m-2" to="/artist">
                 Artist
               </Link>
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
+              <Link id="login" className="btn btn-lg m-2" to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
+              <Link id="signup" className="btn btn-lg m-2" to="/signup">
                 Signup
               </Link>
-              <Link className="btn btn-lg btn-info m-2" to="/artist">
+              <Link id="artist" className="btn btn-lg m-2" to="/artist">
                 Artist
               </Link>
             </>
