@@ -26,7 +26,7 @@ const resolvers = {
     artists: async () => {
       return Artist.find().populate('art')
     },
-    artist: async () => {
+    artist: async (parent, { artistId } ) => {
       return Artist.findOne({ artistId }).populate('art')
     }
   },

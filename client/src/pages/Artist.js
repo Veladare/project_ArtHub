@@ -1,32 +1,37 @@
 import React from 'react';
-import '../Artist.css'; // import CSS file
+import { useQuery } from '@apollo/client';
+import { QUERY_ARTIST } from '../utils/queries';
+import { useParams } from 'react-router-dom';
 
 const Artist = () => {
-    // Artist Information 
-    const artistInfo = {
-        name: 'Artist Name',
-        style: 'Art Style',
-        bio: 'Artist Biography',
-        art: 'URL_of_Art_Photo.jpg'
-    };
+  const { artistId } = useParams();
+
+  // Use the useQuery hook to execute the query
+  const { loading, error, data } = useQuery(QUERY_ARTIST, {
+    variables: { artistId: artistId }, 
+  });
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;;
+
+  const artist = data.artist;
 
   return (
     <main>
       <div className="flex-row justify-center">
         <div
-          className="col-12 col-md-6 mb-3 p-3 artist-container"
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: '1px dotted #1a1a1a' }}
         >
-            {/* Artist Name */}
-            <h1 className="artist-name">{artistInfo.name}</h1>
+          {/* Artist Name */}
+          <h1>{artist.name}</h1>
 
-            {/* Artist Style */}
-            <h2 className="artist-style">Art Style: {artistInfo.style}</h2>
-            {/* Artist Bio */}
-            <p className="artist-bio">{artistInfo.bio}</p>
-        </div>
-        <div className="col-12 col-md-6 mb3 p-3 image-container">
-             {/* Art Photo */}
-        <img src={artistInfo.art} alt="Artwork" className="artist-image"/>
+          {/* Artist Style */}
+          <h2>Art Style: {artist.style}</h2>
+          {/* Artist Bio */}
+          <p>{artist.bio}</p>
+          {/* Art Photo */}
+
         </div>
       </div>
     </main>
