@@ -40,12 +40,12 @@ function EyeOverlay(props) {
     }, []);
 
     const position1 = { x: 494, y: 238 };
-const position2 = { x: 465, y: 220 };
+    const position2 = { x: 465, y: 220 };
 
 
     return (
         <div className="image-container">
-            <img src={monalisa} alt="Mona Lisa" />
+            <img src={monalisa} alt="Mona Lisa"/>
             <div className="svg-overlay" ref={svgRef}>
                 <div className="eye-group" style={{ 
                     transform: `translate(${position1.x}px, ${position1.y}px)` 

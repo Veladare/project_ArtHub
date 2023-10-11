@@ -1,13 +1,13 @@
 .image-container {
-    width: 410px;
-    height: 607px;
+    width: 2px;
+    height: 300px;
     margin: 0 auto 20px;
     display: block;      
     pointer-events: none;
 }
 
 .image-container img {
-    width: 100%;
+    width: 250px;
     height: 100%;
     display: block;
 }
