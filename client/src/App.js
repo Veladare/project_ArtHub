@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -13,6 +13,10 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+import './App.css';
+
+import CursorImage from './assets/brush.png';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -39,6 +43,9 @@ const client = new ApolloClient({
 });
 
 function App() {
+  useEffect(() => {
+    document.body.style.cursor = `url(${CursorImage}), auto`;
+  }, []);
   return (
     <ApolloProvider client={client}>
       <Router>
