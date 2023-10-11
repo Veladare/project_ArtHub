@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Vincent van Gogh",
+        "style": "Post-Impressionism",
+        "bio": "Vincent Willem van Gogh was a Dutch Post-Impressionist painter who posthumously became one of the most famous and influential figures in Western art history. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life.",
+        "art": []
+    },
+    {
+        "name": "Salvador Dalí",
+        "style": "Surrealism",
+        "bio": "Salvador Domingo Felipe Jacinto Dalí i Domènech, 1st Marquess of Dalí de Púbol was a Spanish surrealist artist renowned for his technical skill, precise draftsmanship, and the striking and bizarre images in his work.",
+        "art": []
+    },
+    {
+        "name": "Michelangelo",
+        "style": "Renaissance",
+        "bio": "Michelangelo di Lodovico Buonarroti Simoni, known simply as Michelangelo, was an Italian sculptor, painter, architect, and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art.",
+        "art": []
+    },
+    {
+        "name": "Leonardo da Vinci",
+        "style": "High Renaissance",
+        "bio": "Leonardo di ser Piero da Vinci was an Italian polymath of the High Renaissance who is widely considered one of the most diversely talented individuals ever to have lived. His most known artworks include 'The Mona Lisa' and 'The Last Supper.'",
+        "art": []
+    },
+    {
+        "name": "Auguste Rodin",
+        "style": "Modern Sculpture",
+        "bio": "François Auguste René Rodin was a French sculptor generally considered the founder of modern sculpture. He was schooled traditionally and took a craftsman-like approach to his work. Rodin possessed a unique ability to model a complex, turbulent, and deeply pocketed surface in clay.",
+        "art": []
+    },
+    {
+        "name": "Pablo Picasso",
+        "style": "Cubism",
+        "bio": "Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso was a Spanish painter, sculptor, printmaker, ceramicist, and theatre designer who spent most of his adult life in France. Regarded as one of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, and for the co-invention of collage.",
+        "art": []
+    },
+    {
+        "name": "Claude Monet",
+        "style": "Impressionism",
+        "bio": "Oscar-Claude Monet was a French painter, a founder of French Impressionist painting and the most consistent and prolific practitioner of the movement's philosophy of expressing one's perceptions before nature, especially as applied to plein air landscape painting. The term 'Impressionism' is derived from the title of his painting Impression, soleil levant, which was exhibited in 1874 in the first of the independent exhibitions mounted by Monet and his associates.",
+        "art": []
+    },
+    {
+        "name": "Georgia O’Keeffe",
+        "style": "American Modernism",
+        "bio": "Georgia Totto O'Keeffe was an American artist. She was best known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been called the 'Mother of American modernism.' In addition to her well-documented affinity with the environmental surroundings, she played a central role in establishing American modernism, contributing significantly to its development.",
+        "art": []
+    },
+    {
+        "name": "Frida Kahlo",
+        "style": "Surrealism",
+        "bio": "Magdalena Carmen Frida Kahlo y Calderón was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society. Despite facing numerous health problems, she produced an extensive body of work, achieving fame and recognition in her lifetime and beyond.",
+        "art": []
+    },
+    {
+        "name": "Jackson Pollock",
+        "style": "Abstract Expressionism",
+        "bio": "Paul Jackson Pollock was an American painter and a major figure in the abstract expressionist movement. He was widely noticed for his technique of pouring or splashing liquid household paint onto a horizontal surface, enabling him to view and paint his canvases from all angles. The 'drip paintings' did not rely on the viewer’s perspective and often did not have a clear focal point. Pollock's innovative abstractions forsake traditional artistic processes and often belie the meticulous technique employed.",
+        "art": []
+    }
+]

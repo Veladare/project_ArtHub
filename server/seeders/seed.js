@@ -1,25 +1,47 @@
 const db = require('../config/connection');
-const { User, Thought } = require('../models');
+const { Art, Artist, User } = require('../models');
+const artistSeeds = require('./artistSeeds.json');
+const artSeeds = require('./artSeeds.json');
 const userSeeds = require('./userSeeds.json');
-const thoughtSeeds = require('./thoughtSeeds.json');
 
 db.once('open', async () => {
   try {
-    await Thought.deleteMany({});
+    await Art.deleteMany({});
+    await Artist.deleteMany({});
     await User.deleteMany({});
 
-    await User.create(userSeeds);
+    const users = await User.create(userSeeds);
+    console.log('users:', users);
 
-    for (let i = 0; i < thoughtSeeds.length; i++) {
-      const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
-      const user = await User.findOneAndUpdate(
-        { username: thoughtAuthor },
+    const artists = await Artist.create(artistSeeds);
+    console.log('artists:', artists);
+
+    // loop over each artist, figure out artist ID
+
+
+
+    for (let i = 0; i < artSeeds.length; i++) {
+
+      const currentArtist = artSeeds[i].artist;
+      const artistId = artists.find((artist) => {
+        return artist.name === currentArtist
+      })?._id
+
+      artSeeds[i].artist = artistId;
+
+      const art = await Art.create(artSeeds[i]);
+      const artist = await Artist.findOneAndUpdate(
+        { _id: artistId },
         {
           $addToSet: {
-            thoughts: _id,
+            art: art._id,
           },
+        },
+        {
+          new: true
         }
       );
+      console.log(artist);
     }
   } catch (err) {
     console.error(err);
