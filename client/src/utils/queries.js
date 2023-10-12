@@ -18,7 +18,7 @@ export const QUERY_USER = gql`
 
 export const QUERY_ARTIST = gql`
   query artist($artistId: ID!) {
-    artist(_id: $artistId) {
+    artist(artistId: $artistId) {
       name
       style
       bio
