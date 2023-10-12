@@ -5,6 +5,8 @@ import Auth from '../../utils/auth';
 
 import "./header.css"
 
+import Logo from '../../assets/Logo.png'
+
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
@@ -18,6 +20,9 @@ const Header = () => {
             <h1 className="m-0">Berkeley Art Museum</h1>
           </Link>
           <p className="m-0">Browse the gallery of our featured artists!</p>
+        </div>
+        <div style={{paddingLeft:'50px', paddingRight:'50px'}}>
+          <img src={Logo} alt='Logo' style={{height:'200px', width:'150px'}}/>
         </div>
         <div>
           {Auth.loggedIn() ? (
