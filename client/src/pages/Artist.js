@@ -34,17 +34,15 @@ const Artist = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="flex-row">
         <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
+          className="artist-info">
           <h1>{artist.name}</h1>
           <p>Style: {artist.style}</p>
           <p>Bio: {artist.bio}</p>
-          <a href=''>
-            <img src='/src/Artists/' />
-          </a>
+          </div>
+          
+          <div className="artwork-container">
           {artist.art?.map((art, index) => (
               <Art
                 key={index} // Use a unique key for each Art component
