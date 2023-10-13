@@ -1,32 +1,50 @@
 import React from 'react';
-import '../Artist.css'; // import CSS file
+import { useQuery } from '@apollo/client';
+import { QUERY_ARTIST } from '../utils/queries';
+import { useParams } from 'react-router-dom';
+import '../Artist.css'; 
+import Art from '../components/Art'; 
+
+
 
 const Artist = () => {
-    // Artist Information 
-    const artistInfo = {
-        name: 'Artist Name',
-        style: 'Art Style',
-        bio: 'Artist Biography',
-        art: 'URL_of_Art_Photo.jpg'
-    };
+  const { artistId } = useParams();
+
+  console.log('artistId:', artistId);
+
+  const { loading, error, data } = useQuery(QUERY_ARTIST, {
+    variables: { artistId: artistId },
+  });
+
+  console.log('loading:', loading);
+  console.log('error:', error);
+  console.log('data:', data);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const artist = data?.artist || {};
 
   return (
     <main>
       <div className="flex-row justify-center">
         <div
-          className="col-12 col-md-6 mb-3 p-3 artist-container"
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: '1px dotted #1a1a1a' }}
         >
-            {/* Artist Name */}
-            <h1 className="artist-name">{artistInfo.name}</h1>
-
-            {/* Artist Style */}
-            <h2 className="artist-style">Art Style: {artistInfo.style}</h2>
-            {/* Artist Bio */}
-            <p className="artist-bio">{artistInfo.bio}</p>
-        </div>
-        <div className="col-12 col-md-6 mb3 p-3 image-container">
-             {/* Art Photo */}
-        <img src={artistInfo.art} alt="Artwork" className="artist-image"/>
+          <h1>{artist.name}</h1>
+          <p>Style: {artist.style}</p>
+          <p>Bio: {artist.bio}</p>
+          <a href=''>
+            <img src='/src/Artists/' />
+          </a>
+          {artist.art.map((art, index) => (
+              <Art
+                key={index} // Use a unique key for each Art component
+                title={art.title}
+                description={art.description}
+              />
+            ))}
         </div>
       </div>
     </main>
@@ -34,3 +52,5 @@ const Artist = () => {
 };
 
 export default Artist;
+
+
