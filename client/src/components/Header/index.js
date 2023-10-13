@@ -15,14 +15,14 @@ const Header = () => {
   return (
     <header className=" mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
+      <div style={{paddingLeft:'50px', paddingRight:'50px'}}>
+          <img src={Logo} alt='Logo' style={{height:'100px', width:'150px'}}/>
+        </div>
         <div>
           <Link to="/">
             <h1 className="m-0">Berkeley Art Museum</h1>
           </Link>
           <p className="m-0">Browse the gallery of our featured artists!</p>
-        </div>
-        <div style={{paddingLeft:'50px', paddingRight:'50px'}}>
-          <img src={Logo} alt='Logo' style={{height:'200px', width:'150px'}}/>
         </div>
         <div>
           {Auth.loggedIn() ? (
