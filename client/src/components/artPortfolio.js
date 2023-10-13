@@ -1,6 +1,6 @@
 import React from 'react';
 import Art from './Art';
-import './artPortfolio.css';//if we have css need to import it here
+import './artPortfolio.css';
 
 
 
