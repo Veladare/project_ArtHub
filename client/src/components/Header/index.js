@@ -19,7 +19,7 @@ const Header = () => {
               <Link to="/">
                 <h1>Berkeley Art Museum</h1>
               </Link>
-              <p>Browse the gallery of our featured artists!</p>
+              <h2>Browse the gallery of our featured artists!</h2>
           </div>
       </div>
       <div>
