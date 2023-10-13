@@ -42,6 +42,7 @@ db.once('open', async () => {
         }
       );
       console.log(artist);
+      console.log(art);
     }
   } catch (err) {
     console.error(err);
