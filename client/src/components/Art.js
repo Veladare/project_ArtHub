@@ -1,15 +1,15 @@
 import React from 'react';
 
-import artPiece from '../assets/Art/David.jpeg';//might need to fix these paths
-import artPiece2 from '../assets/Art/Guernica.jpeg';
-import artPiece3 from '../assets/Art/Jimson_Weed.jpeg';
-import artPiece4 from '../assets/Art/Mona_Lisa.jpeg';
-import artPiece5 from '../assets/Art/number-1a.jpeg';
-import artPiece6 from '../assets/Art/Starry_Night.jpeg';
-import artPiece7 from '../assets/Art/the_persistence_of_memory.jpeg';
-import artPiece8 from '../assets/Art/the_thinker.jpeg';
-import artPiece9 from '../assets/Art/the_two_fridas.jpeg';
-import artPiece10 from '../assets/Art/Water_Lilies.jpeg';
+import artPiece from '../assets/Art/Starry_Night.jpeg';
+import artPiece2 from '../assets/Art/the_persistence_of_memory.jpeg';
+import artPiece3 from '../assets/Art/David.jpeg';
+import artPiece4 from '../assets/Art/Guernica.jpeg';
+import artPiece5 from '../assets/Art/Water_Lilies.jpeg';
+import artPiece6 from '../assets/Art/Jimson_Weed.jpeg';
+import artPiece7 from '../assets/Art/the_two_fridas.jpeg';
+import artPiece8 from '../assets/Art/number-1a.jpeg';
+import artPiece9 from '../assets/Art/Mona_Lisa.jpeg';
+import artPiece10 from '../assets/Art/the_thinker.jpeg';
 
 
 const artPieces = [
