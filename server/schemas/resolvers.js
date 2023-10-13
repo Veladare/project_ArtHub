@@ -20,8 +20,8 @@ const resolvers = {
     arts: async () => {
       return Art.find()
     },
-    art: async () => {
-      return Art.findOne({ artId })
+    art: async (parent, { artId }) => {
+      return Art.findOne({ _id: artId }).populate('artist');
     },
     artists: async () => {
       return Artist.find().populate('art')
