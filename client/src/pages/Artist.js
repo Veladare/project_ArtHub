@@ -5,26 +5,28 @@ import { useParams } from 'react-router-dom';
 import '../Artist.css'; 
 import Art from '../components/Art'; 
 
-import artist from '../assets/Artists/Claud_Monet.jpeg';
-import artist2 from '../assets/Artists/Da_Vinci.jpeg';
-import artist3 from '../assets/Artists/Frida_Kahlo.jpeg';
-import artist4 from '../assets/Artists/Jackson_Pollock.jpeg';
-import artist5 from '../assets/Artists/Michelangelo.jpeg';
+import artist from '../assets/Artists/Van_Gogh.jpeg';
+import artist2 from '../assets/Artists/Salvador_Dali.jpeg';
+import artist3 from '../assets/Artists/Michelangelo.jpeg';
+import artist4 from '../assets/Artists/Picasso.jpeg';
+import artist5 from '../assets/Artists/Claud_Monet.jpeg';
 import artist6 from '../assets/Artists/Okeefe.jpeg';
-import artist7 from '../assets/Artists/Picasso.jpeg';
-import artist8 from '../assets/Artists/Salvador_Dali.jpeg';
-import artist9 from '../assets/Artists/Van_Gogh.jpeg';
+import artist7 from '../assets/Artists/Frida_Kahlo.jpeg';
+import artist8 from '../assets/Artists/Jackson_Pollock.jpeg';
+import artist9 from '../assets/Artists/Da_Vinci.jpeg';
+import artist10 from '../assets/Artists/Auguste_Rodin.jpg';
 
 const artists = [
   {image: artist, altText: "artist", description: "artist",name: "Vincent van Gogh"},
-  {image: artist2, altText: "artist2", description: "artist2",name: "Leonardo da Vinci"},
-  {image: artist3, altText: "artist3", description: "artist3"},
-  {image: artist4, altText: "artist4", description: "artist4"},
-  {image: artist5, altText: "artist5", description: "artist5"},
-  {image: artist6, altText: "artist6", description: "artist6"},
-  {image: artist7, altText: "artist7", description: "artist7"},
-  {image: artist8, altText: "artist8", description: "artist8"},
-  {image: artist9, altText: "artist9", description: "artist9"},
+  {image: artist2, altText: "artist2", description: "artist2",name: "Salvador Dalí"},
+  {image: artist3, altText: "artist3", description: "artist3",name: "Michelangelo"},
+  {image: artist4, altText: "artist4", description: "artist4",name: "Pablo Picasso"},
+  {image: artist5, altText: "artist5", description: "artist5",name: "Claude Monet"},
+  {image: artist6, altText: "artist6", description: "artist6",name: "Georgia O'Keeffe"},
+  {image: artist7, altText: "artist7", description: "artist7",name: "Frida Kahlo"},
+  {image: artist8, altText: "artist8", description: "artist8",name: "Jackson Pollock"},
+  {image: artist9, altText: "artist9", description: "artist9",name: "Leonardo da Vinci"},
+  {image: artist10, altText: "artist10", description: "artist10",name: "Auguste Rodin"},
 ];
 
 const Artist = () => {
