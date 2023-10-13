@@ -1,19 +1,38 @@
 header {
     color: black;
     background-color: rgb(109, 154, 109);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; /* Add some padding on left and right */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 h1 {
-    color: black;
+    color: white;
+    margin-bottom: 5px;
+    
 }
 
-#artist{
+p {
+    margin-top: 5px;
+    color: blanchedalmond;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none; /* To remove the underline from the links */
+}
+
+#artist {
     background-color: red;
     color: white;
 }
 
-#login{
-    background-color:orange ;
+#login {
+    background-color: orange;
     color: white;
 }
 
@@ -25,4 +44,14 @@ h1 {
 #logout {
     background-color: purple;
     color: white;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 20px; 
 }
