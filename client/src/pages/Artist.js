@@ -32,9 +32,11 @@ const Artist = () => {
           <h1>{artist.name}</h1>
           <p>Style: {artist.style}</p>
           <p>Bio: {artist.bio}</p>
+
           <a href=''>
             <img src='/src/Artists/' />
           </a>
+
         </div>
       </div>
     </main>
