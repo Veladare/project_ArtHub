@@ -6,40 +6,25 @@
 }
 
 /*CSS for artist container (on the left) */
-.artist-container {
+.artist-info {
     border: 1px dotted #1a1a1a;
     width: 50%;
     padding: 20px;
     margin: 10px;
+    background-color: rgba(24, 24, 24, 0.5);
+}
+/* Style for the artwork container */
+.artwork-container {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(24, 24, 24, 0.5);
 }
 
-/* Artist Name */
-.artist-name {
-    font-size: 24px;
-    color:#333; 
-}
-
-/* Artist Name */
-.artist-style {
-    font-size: 18px;
-    color: #666;
-}
-
-/* Artist Bio*/
-.artist-bio {
-    font-size: 16px;
-    color: #777;
-}
 
 /* Artist Image */
 .artist-img {
     max-width: 100%;
     height: auto;
     border: 2px solid #1a1a1a;
-}
-
-/* Styles for the image container (on the right) */
-.image-container {
-    width: 50%;
-    text-align: center;
 }
