@@ -2,6 +2,9 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_ARTIST } from '../utils/queries';
 import { useParams } from 'react-router-dom';
+import '../Artist.css'; 
+import Art from '../components/Art'; 
+
 
 
 const Artist = () => {
@@ -20,6 +23,13 @@ const Artist = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
+
+  console.log('artistId:', artistId);
+
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
   const artist = data?.artist || {};
 
   return (
@@ -32,11 +42,16 @@ const Artist = () => {
           <h1>{artist.name}</h1>
           <p>Style: {artist.style}</p>
           <p>Bio: {artist.bio}</p>
-
           <a href=''>
             <img src='/src/Artists/' />
           </a>
-
+          {artist.art?.map((art, index) => (
+              <Art
+                key={index} // Use a unique key for each Art component
+                title={art.title}
+                description={art.description}
+              />
+            ))}
         </div>
       </div>
     </main>
@@ -44,3 +59,5 @@ const Artist = () => {
 };
 
 export default Artist;
+
+

@@ -24,6 +24,7 @@ export const QUERY_ARTIST = gql`
       bio
       art {
         _id
+        title
       }
     }
   }
