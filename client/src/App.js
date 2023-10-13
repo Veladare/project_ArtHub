@@ -67,7 +67,7 @@ function App() {
                 element={<Signup />} 
               />
               <Route 
-                path="/artist" 
+                path="/artist/:artistId" 
                 element={<Artist />} 
               />
               <Route

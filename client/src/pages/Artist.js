@@ -24,6 +24,22 @@ const Artist = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   const artist = data?.artist || {};
+  const { artistId } = useParams();
+
+  console.log('artistId:', artistId);
+
+  const { loading, error, data } = useQuery(QUERY_ARTIST, {
+    variables: { artistId: artistId },
+  });
+
+  console.log('loading:', loading);
+  console.log('error:', error);
+  console.log('data:', data);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const artist = data?.artist || {};
 
   return (
     <main>

@@ -5,6 +5,8 @@ import Auth from '../../utils/auth';
 
 import "./header.css"
 
+import Logo from '../../assets/Logo.png'
+
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
@@ -13,6 +15,9 @@ const Header = () => {
   return (
     <header className=" mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
+      <div style={{paddingLeft:'50px', paddingRight:'50px'}}>
+          <img src={Logo} alt='Logo' style={{height:'100px', width:'150px'}}/>
+        </div>
         <div>
           <Link to="/">
             <h1 className="m-0">Berkeley Art Museum</h1>

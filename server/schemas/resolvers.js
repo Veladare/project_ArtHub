@@ -8,7 +8,7 @@ const resolvers = {
       return User.find()
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('thoughts');
+      return User.findOne({ username })
     },
     // thoughts: async (parent, { username }) => {
     //   const params = username ? { username } : {};
@@ -26,8 +26,8 @@ const resolvers = {
     artists: async () => {
       return Artist.find().populate('art')
     },
-    artist: async () => {
-      return Artist.findOne({ artistId }).populate('art')
+    artist: async (parent, { artistId }) => {
+      return Artist.findOne({ _id: artistId }).populate('art');
     }
   },
 
