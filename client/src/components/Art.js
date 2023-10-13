@@ -9,7 +9,7 @@ import artPiece6 from '../assets/Art/Starry_Night.jpeg';
 import artPiece7 from '../assets/Art/the_persistence_of_memory.jpeg';
 
 const artPieces = [
-    {image: artPiece, altText: "artPiece", description: "artPiece", title: "test"},
+    {image: artPiece, altText: "artPiece", description: "artPiece", title: "Starry Night"},
     {image: artPiece2, altText: "artPiece2", description: "artPiece2"},
     {image: artPiece3, altText: "artPiece3", description: "artPiece3"},
     {image: artPiece4, altText: "artPiece4", description: "artPiece4"},

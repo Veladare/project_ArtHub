@@ -26,9 +26,6 @@ const Artist = () => {
 
   console.log('artistId:', artistId);
 
-  console.log('loading:', loading);
-  console.log('error:', error);
-  console.log('data:', data);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
@@ -48,7 +45,7 @@ const Artist = () => {
           <a href=''>
             <img src='/src/Artists/' />
           </a>
-          {artist.art.map((art, index) => (
+          {artist.art?.map((art, index) => (
               <Art
                 key={index} // Use a unique key for each Art component
                 title={art.title}

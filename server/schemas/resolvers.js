@@ -1,6 +1,7 @@
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Art, Artist } = require('../models');
 const { signToken } = require('../utils/auth');
+const {Types} = require('mongoose');
 
 const resolvers = {
   Query: {
@@ -27,7 +28,7 @@ const resolvers = {
       return Artist.find().populate('art')
     },
     artist: async (parent, { artistId }) => {
-      return Artist.findOne({ _id: artistId }).populate('art');
+      return Artist.findOne({ _id: new Types.ObjectId(artistId) }).populate('art');
     }
   },
 
