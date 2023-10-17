@@ -29,9 +29,6 @@ const Header = () => {
             <button id="logout" className="btn" onClick={logout}>
               Logout
             </button>
-            <Link id="artist" className="btn" to="/artist">
-              Artist
-            </Link>
           </>
         ) : (
           <>
@@ -40,9 +37,6 @@ const Header = () => {
             </Link>
             <Link id="signup" className="btn" to="/signup">
               Signup
-            </Link>
-            <Link id="artist" className="btn" to="/artist">
-              Artist
             </Link>
           </>
         )}

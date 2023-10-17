@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
  import { Link } from 'react-router-dom';
 
+ import Auth from '../../utils/auth';
+
 
 import artPiece from '../../assets/Art/Starry_Night.jpeg';
 import artPiece2 from '../../assets/Art/the_persistence_of_memory.jpeg';
@@ -45,7 +47,7 @@ function Gallery({ title, id}) {
                     <div className="image-text">
                         <p style={{ color: "#fff" }}>{title}</p>
                         <Link className="" style ={{textDecoration: "none", color:"white",  transform: 'scale(1.5)'}}
-                        to={`/artist/${id}`}>+<FontAwesomeIcon icon={faSearch}/> </Link>
+                        to={Auth.loggedIn() ? `/artist/${id}`:"/login"}>+<FontAwesomeIcon icon={faSearch}/> </Link>
 
                         
                     
