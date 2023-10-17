@@ -45,15 +45,12 @@ function Gallery({ title, id}) {
                     <div className="image-text">
                         <p style={{ color: "#fff" }}>{title}</p>
                         <p style={{ color: "#fff" }}>by{}</p>
-                        <a>
                         <Link
                             className=""
                             to={`/artist/${id}`} >
                             Artist portal.
                             </Link>
-                        </a>
-                        
-                        <p> +<FontAwesomeIcon icon={faSearch} /></p>
+                       <p> +<FontAwesomeIcon icon={faSearch} /></p>
                         
                     
                     </div>
