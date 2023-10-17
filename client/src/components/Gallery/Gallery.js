@@ -44,12 +44,9 @@ function Gallery({ title, id}) {
                     <img src={artImage.image} alt={artImage.altText} style={{ height: "300px", width: "300px" }} />
                     <div className="image-text">
                         <p style={{ color: "#fff" }}>{title}</p>
-                        <p style={{ color: "#fff" }}>by{}</p>
-                        <Link className=""
-                        to={`/artist/${id}`}
-                        style={{ cursor: 'inherit' }}>Artist portal.</Link>
+                        <Link className="" style ={{textDecoration: "none", color:"white",  transform: 'scale(1.5)'}}
+                        to={`/artist/${id}`}>+<FontAwesomeIcon icon={faSearch}/> </Link>
 
-                       <p> +<FontAwesomeIcon icon={faSearch} /></p>
                         
                     
                     </div>
