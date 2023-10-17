@@ -64,8 +64,13 @@ const Artist = () => {
           <p>Style: {artist.style}</p>
           <p>Bio: {artist.bio}</p>
           <a href=''>
-            <img src={artistImage?.image} />
+            <img src={artistImage?.image} 
+              alt={artistImage?.altText}
+              style={{ maxWidth: '300px', height: 'auto' }} // Setting a max width, height adjusts proportionally
+            />
           </a>
+          </div>
+          <div className="artwork-container">
           {artist.art?.map((art, index) => (
               <Art
                 key={index} // Use a unique key for each Art component

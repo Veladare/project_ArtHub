@@ -1,0 +1,27 @@
+/* Define a flex container for the art pieces */
+.art-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow art pieces to wrap to the next line if needed */
+    justify-content: space-between; /* Spacing between art pieces */
+    align-items: center; /* Align vertically in the center */
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* Style for each art piece */
+  .art {
+    border: 1px dotted #1a1a1a;
+    width: 30%; /* Adjust as needed to fit your design */
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(24, 24, 24, 0.5);
+    border: 15px groove rgb(187, 158, 84);
+    text-align: center;
+  }
+  
+  /* Style for the image inside the art piece */
+  .art img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1a1a1a;
+  }
