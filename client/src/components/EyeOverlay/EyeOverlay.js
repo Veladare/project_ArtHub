@@ -49,7 +49,7 @@ function EyeOverlay(props) {
 
     return (
         
-        <div className="image-container">
+        <div className="imageContainers">
             <img src={monalisa} alt="Mona Lisa"/>
             <div className="svg-overlay" ref={svgRef}>
                 <div className="eye-group" style={{ 
