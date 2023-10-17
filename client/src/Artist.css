@@ -30,3 +30,33 @@
     height: auto;
     border: 2px solid #1a1a1a;
 }
+
+/* Style for larger screen */
+@media (min-width: 768px) {
+    .flex-row {
+        justify-content: space-between;
+    }
+
+    .artist-info {
+        width: 50%;
+    }
+
+    .artwork-container {
+        width: 45%
+    }
+}
+/* Style for smaller screens */
+@media (max-width: 767px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .artist-info {
+        width: 100%;
+    }
+
+    .artwork-container {
+        width: 100%;
+    }
+    
+}
