@@ -1,0 +1,50 @@
+  /* quick reset */
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .art-container {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+  
+  .art-row {
+    display: flex;
+    margin: 10px;
+  }
+  
+  /* relevant styles */
+
+    /* Custom CSS for image and text */
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Background color for the text */
+      color: #fff; /* Text color */
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .image-container:hover .image-text {
+      opacity: 1; /* Show text on hover */
+      
+  }
+  .image-container:hover {
+    transform: scale(1.1); /* Zoom in effect on hover (adjust the scale factor as needed) */
+  }
+  
