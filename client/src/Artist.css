@@ -12,9 +12,7 @@
     padding: 20px;
     margin: 10px;
     background-color: rgba(24, 24, 24, 0.5);
-    border: 15px; 
-    border-style: groove;
-    border-color: rgb(187, 158, 84);
+    border: 15px groove rgb(187, 158, 84);
 }
 /* Style for the artwork container */
 .artwork-container {
@@ -22,9 +20,7 @@
     padding: 10px;
     margin: 10px;
     background-color: rgba(24, 24, 24, 0.5);
-    border: 15px; 
-    border-style: groove;
-    border-color: rgb(187, 158, 84);
+    border: 15px groove rgb(187, 158, 84);
 }
 
 

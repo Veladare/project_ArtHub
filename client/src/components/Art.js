@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Art.css';
 
 import artPiece from '../assets/Art/Starry_Night.jpeg';
 import artPiece2 from '../assets/Art/the_persistence_of_memory.jpeg';
@@ -32,14 +33,13 @@ function Art({ title, description }) {
         return null;
     }
     return (
-    <div className="art" style={{ padding: "10px",
-        margin: "10px", backgroundColor: "white", border: "1px solid black"}}>
-        <div className='art-image'>
-            <figure className='art-image-wrapper'>
-                <img src={artImage.image} alt={artImage.altText} />
-                <p style={{color:"blue"}}>{description}</p>
+    <div className="art">
+        
+            <figure className='art-image'>
+                <img src={artImage.image} alt={artImage.altText} className="art-img"/>
+                
             </figure>
-        </div>    
+            <p style={{color:"blue"}}>{description}</p>    
     </div>
     );
 }

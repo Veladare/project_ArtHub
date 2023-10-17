@@ -1,6 +1,6 @@
 import React from 'react';
 import Art from './Art';
-import './artPortfolio.css';
+import '../artPortfolio.css';
 
 
 
