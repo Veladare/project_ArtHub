@@ -30,7 +30,7 @@ const artPieces = [
 function Art({ title, description }) {
     const artImage = artPieces.find((art) => art.title === title);
     if (!artImage) {
-        return null;
+      return null;
     }
     return (
     <div className="art">
@@ -41,7 +41,11 @@ function Art({ title, description }) {
             </figure>
             <p style={{color:"blue"}}>{description}</p>    
     </div>
-    );
-}
 
-export default Art;
+    );
+  }
+  
+  // Define another function to export
+  
+  
+  export default Art; // Export the Art component as well.

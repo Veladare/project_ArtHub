@@ -19,13 +19,13 @@ const resolvers = {
     //   return Thought.findOne({ _id: thoughtId });
     // },
     arts: async () => {
-      return Art.find()
+      return Art.find().populate('artist')
     },
     art: async (parent, { artId }) => {
       return Art.findOne({ _id: artId }).populate('artist');
     },
     artists: async () => {
-      return Artist.find().populate('art')
+      return Artist.find().populate('art')  
     },
     artist: async (parent, { artistId }) => {
       return Artist.findOne({ _id: new Types.ObjectId(artistId) }).populate('art');

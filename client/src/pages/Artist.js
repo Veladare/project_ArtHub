@@ -29,24 +29,25 @@ const artists = [
   {image: artist10, altText: "artist10", description: "artist10",name: "Auguste Rodin"},
 ];
 
+
 const Artist = () => {
   const { artistId } = useParams();
 
-  console.log('artistId:', artistId);
 
   const { loading, error, data } = useQuery(QUERY_ARTIST, {
     variables: { artistId: artistId },
+    
   });
-
-  //console.log('loading:', loading);
-  //console.log('error:', error);
-  //console.log('data:', data);
+  
+  console.log('loading:', loading);
+  console.log('error:', error);
+  console.log('data:', data);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
 
-  //console.log('artistId:', artistId);
+  console.log('artistId:', artistId);
 
 
   if (loading) return <p>Loading...</p>;
@@ -84,5 +85,6 @@ const Artist = () => {
 };
 
 export default Artist;
+
 
 
