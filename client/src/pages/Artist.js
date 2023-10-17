@@ -22,7 +22,7 @@ const artists = [
   {image: artist3, altText: "artist3", description: "artist3",name: "Michelangelo"},
   {image: artist4, altText: "artist4", description: "artist4",name: "Pablo Picasso"},
   {image: artist5, altText: "artist5", description: "artist5",name: "Claude Monet"},
-  {image: artist6, altText: "artist6", description: "artist6",name: "Georgia O'Keeffe"},
+  {image: artist6, altText: "artist6", description: "artist6",name: "Georgia O’Keeffe"},
   {image: artist7, altText: "artist7", description: "artist7",name: "Frida Kahlo"},
   {image: artist8, altText: "artist8", description: "artist8",name: "Jackson Pollock"},
   {image: artist9, altText: "artist9", description: "artist9",name: "Leonardo da Vinci"},
