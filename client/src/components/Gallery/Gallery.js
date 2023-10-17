@@ -41,7 +41,7 @@ function Gallery({ title, id}) {
   return (
     <div className="art-container">
         <div className="art-row">
-            <div className="art" style={{ padding: "10px", margin: "10px", backgroundColor: "white", border: "1px solid black" }}>
+            <div className="art" style={{ padding: "10px", margin: "10px", backgroundColor: "white", border: "15px groove rgb(187, 158, 84)" }}>
                 <div className='image-container'>
                     <img src={artImage.image} alt={artImage.altText} style={{ height: "300px", width: "300px" }} />
                     <div className="image-text">
