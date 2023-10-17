@@ -29,19 +29,21 @@ const artPieces = [
 function Art({ title, description }) {
     const artImage = artPieces.find((art) => art.title === title);
     if (!artImage) {
-        return null;
+      return null;
     }
     return (
-    <div className="art" style={{ padding: "10px",
-        margin: "10px", backgroundColor: "white", border: "1px solid black"}}>
+      <div className="art" style={{ padding: "10px", margin: "10px", backgroundColor: "white", border: "1px solid black" }}>
         <div className='art-image'>
-            <figure className='art-image-wrapper'>
-                <img src={artImage.image} alt={artImage.altText} />
-                <p style={{color:"blue"}}>{description}</p>
-            </figure>
-        </div>    
-    </div>
+          <figure className='art-image-wrapper'>
+            <img src={artImage.image} alt={artImage.altText} />
+            <p style={{ color: "blue" }}>{description}</p>
+          </figure>
+        </div>
+      </div>
     );
-}
-
-export default Art;
+  }
+  
+  // Define another function to export
+  
+  
+  export default Art; // Export the Art component as well.
