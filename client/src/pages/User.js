@@ -38,7 +38,7 @@ function UpdateEmailForm() {
         value={newEmail}
         onChange={(e) => setNewEmail(e.target.value)}
       />
-      <button onClick={handleEmailUpdate}>Your Page</button>
+      <button onClick={handleEmailUpdate}>Update Email</button>
       <div>
         <p>Current Email: {user.email} </p>
         <Link to="/">back to the homepage.</Link>
