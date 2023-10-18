@@ -65,7 +65,7 @@ const resolvers = {
         const user = await User.findByIdAndUpdate(context.user._id, { email: newEmail }, { new: true });
   
         return user;
-      
+
       },
     },
   };
