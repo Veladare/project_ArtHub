@@ -37,6 +37,7 @@ const typeDefs = gql`
     artist(artistId: ID!): Artist
     arts: [Art]
     art(artId: ID!): Art
+    me: User
   }
 
   type Mutation {

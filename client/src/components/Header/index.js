@@ -29,6 +29,9 @@ const Header = () => {
             <button id="logout" className="btn" onClick={logout}>
               Logout
             </button>
+            <Link id="user" className="btn" to="/user/:userId">
+              Update Email
+            </Link>
           </>
         ) : (
           <>
