@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import Artist from './pages/Artist';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import User from './pages/User';
 
 import './App.css';
 
@@ -69,6 +70,10 @@ function App() {
               <Route 
                 path="/artist/:artistId" 
                 element={<Artist />} 
+              />
+              <Route 
+                path="/user/:userId"
+                element={<User />} 
               />
               <Route
               />

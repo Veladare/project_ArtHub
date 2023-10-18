@@ -11,6 +11,12 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username })
     },
+
+    me: async (_, args, context) => {
+      const user = await User.findById(context.user._id,);
+
+      return user;
+    },
     // thoughts: async (parent, { username }) => {
     //   const params = username ? { username } : {};
     //   return Thought.find(params).sort({ createdAt: -1 });
@@ -59,6 +65,7 @@ const resolvers = {
         const user = await User.findByIdAndUpdate(context.user._id, { email: newEmail }, { new: true });
   
         return user;
+
       },
     },
   };
