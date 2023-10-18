@@ -30,7 +30,7 @@ const Header = () => {
               Logout
             </button>
             <Link id="user" className="btn" to="/user/:userId">
-              Update Email
+              Your Page
             </Link>
           </>
         ) : (
