@@ -22,9 +22,13 @@
 ## [Usage](#table-of-contents)
   
   To use this site, you will need to sign up to view any artist and their associated works. Once logged in, you can click any artwork from the front page to view the artists and their works with info about them.
-  ![Artist page from side](/client/src/assets/artistPage.png)
+  ![Artist page after logging in](/client/src/assets/artistPage.png)
 
   From your user profile page, you will be able to update info of your account or delete it, should you no longer want one.
+
+  https://museum-gallery-d60bff79cfff.herokuapp.com/ - deployed site
+
+  https://github.com/Veladare/project_ArtHub - repo for the project
 
 ## [License](#table-of-contents)
   
